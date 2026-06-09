@@ -10,8 +10,8 @@ While many practitioners default to SQL or Python for data preprocessing, execut
 
 ## Repository Structure
 
-* `us_presidents_raw.csv`: The initial, unmodified dataset containing formatting errors, duplicates, inconsistencies, and redundant columns.
-* `us_presidents_cleaned.csv`: The finalized, clean dataset ready for data analysis, pivot tables, or database ingestion.
+* `Data cleaning raw.xlsx`: The initial, unmodified dataset containing formatting errors, duplicates, inconsistencies, and redundant columns.
+* `Project Excel - Data Cleaning.xlsx`: The finalized, clean dataset ready for data analysis, pivot tables, or database ingestion.
 
 ---
 
@@ -62,13 +62,6 @@ The cleaning process followed a strict data integrity workflow to ensure no raw 
 ### 8. Dimensionality Reduction (Dropping Redundant Columns)
 
 * **Action:** Removed columns deemed entirely useless or redundant for downstream analytical purposes, such as heavily corrupted text columns or duplicate unique identifiers.
-
----
-
-## Key Takeaways and Best Practices
-
-* **Know Your Ingestion Targets:** Formatting choices (like stripping currency symbols or trimming trailing spaces) are critical if the data is bound for an SQL database, where non-numeric characters or invisible spaces break data schemas.
-* **Context Matters:** Data cleaning is not a one-size-fits-all process. Modifying variables must always align with the ultimate business logic and the specific analytical objective of the project.
 
 ---
 
